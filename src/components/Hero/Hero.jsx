@@ -13,11 +13,10 @@ const Hero = (props) => {
       </div>
       <div className="heroText">
         <h1 style={{ color: props.color }} className="heroHeader">
-          Create and share your photo stories.{" "}
+          {props.header}
         </h1>
         <p style={{ color: props.color }} className="heroParagraph">
-          Photosnap is a platform for photographers and visual storytellers. We
-          make it easy to share photos, tell stories and connect with others.
+         {props.paragraph}
         </p>
         <div className="heroArrowContainer">
           <div className="" style={{ color: props.color }}>

@@ -23,7 +23,7 @@ const Home = () => {
       />
       <Hero
         background={"white"}
-        color={"white"}
+        color={"black"}
         header={"DESIGNED FOR EVERYONE"}
         paragraph={
           "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
