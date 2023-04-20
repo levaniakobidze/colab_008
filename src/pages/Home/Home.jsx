@@ -21,6 +21,14 @@ const Home = () => {
           "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
         }
       />
+      <Hero
+        background={"white"}
+        color={"white"}
+        header={"DESIGNED FOR EVERYONE"}
+        paragraph={
+          "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
+        }
+      />
     </div>
   );
 };
