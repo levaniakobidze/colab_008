@@ -1,9 +1,10 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
-
+import PricingCalculator from "../../components/pricing_calculator/PricingCalculator";
 const Home = () => {
   return (
     <div>
+<PricingCalculator />
       <Hero
         background={"black"}
         color={"white"}
