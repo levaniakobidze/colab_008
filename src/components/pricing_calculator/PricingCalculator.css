@@ -1,0 +1,173 @@
+.pricingComponentsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricingMenuContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 56px 22px 40px 21px;
+  background: #f5f5f5;
+  margin: 40px 28px 24px 29px;
+}
+.switchContainer {
+  display: flex;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 64px;
+  height: 32px;
+  background: #dfdfdf;
+  border-radius: 16px;
+}
+.inputSwitched {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 64px;
+  height: 32px;
+  background: #dfdfdf;
+  border-radius: 16px;
+}
+.switch {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: black;
+}
+
+.pricingMenuHeader {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 18px;
+  color: #000000;
+}
+.pricingMenuParagraph {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  width: 275px;
+  display: flex;
+  margin-bottom: 40px;
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.price {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.pricingMenuButton {
+  width: 245px;
+  height: 40px;
+  background-color: black;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-top: 40px;
+  border: none;
+}
+.pricingMenuButton:hover {
+  background-color: #dfdfdf;
+  color: black;
+  cursor: pointer;
+}
+.pricingRightSide {
+  display: none;
+}
+.pricingCalculatorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.switchMonth {
+  margin-right: 36px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+
+  text-align: right;
+
+  color: #000000;
+}
+.switchYear {
+  margin-left: 36px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+
+  text-align: right;
+
+  color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .pricingComponentsContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricingMenuPrice {
+    display: none;
+  }
+  .pricingMenuContainer {
+    flex-direction: row;
+    width: 689px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .pricingMenuInfo {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .pricingMenuButton {
+    margin-top: 32px;
+    width: 270px;
+    height: 40px;
+  }
+  .pricingRightSide {
+    margin-bottom: 180px;
+    margin-left: 130px;
+
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .pricingComponentsContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pricingMenuContainer {
+    width: 350px;
+  }
+}
