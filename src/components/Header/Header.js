@@ -40,6 +40,7 @@ export default function Header() {
       </div>
       <ModalWindow clicked={clicked} />
       <div
+        onClick={() => setClicked(false)}
         className={`${clicked ? "header-overlay" : "header-overlay disappear"}`}
       ></div>
     </header>
