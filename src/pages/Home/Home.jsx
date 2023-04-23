@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
+import Features3 from "../../components/FeaturesTexts/Features3";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
           "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
         }
       />
+      <Features3 />
     </div>
   );
 };
