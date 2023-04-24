@@ -30,7 +30,7 @@ const PricingCalculator = () => {
         <PricingMenuComponent
           background={"black"}
           color={"white"}
-          height={window.inerWidth < 768 ? "470px" : "407px"}
+          height={window.innerWidth < 768 ? "470px" : "407px"}
           title={"Pro"}
           paragraph={
             "More advanced features available. Recommended for photography veterans and professionals."

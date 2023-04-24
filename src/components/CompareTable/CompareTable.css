@@ -1,0 +1,59 @@
+.compareTableContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.compareTableHeader {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  margin-bottom: 56px;
+  text-align: center;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+th {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  padding-top: 25px;
+  padding-bottom: 23.5px;
+  display: flex;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+td {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 0;
+  letter-spacing: 2px;
+  color: #000000;
+  text-align: left;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 23.5px;
+  padding-top: 25px;
+  padding-left: 124px;
+}
+.tableText {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.firstRow {
+  border-bottom: 1px solid black;
+}
