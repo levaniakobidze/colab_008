@@ -2,9 +2,11 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import Features3 from "../../components/FeaturesTexts/Features3";
 import PricingCalculator from "../../components/pricing_calculator/PricingCalculator";
+import CompareTable from "../../components/CompareTable/CompareTable";
 const Home = () => {
   return (
     <div>
+      <CompareTable />
 <PricingCalculator />
       <Hero
         background={"black"}

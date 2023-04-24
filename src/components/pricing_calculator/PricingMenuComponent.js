@@ -7,19 +7,32 @@ const PricingMenuComponent = (props) => {
       className="pricingMenuContainer"
     >
       <div className="pricingMenuInfo">
-        <div className="pricingMenuHeader">{props.title}</div>
+        <div style={{ color: props.color }} className="pricingMenuHeader">
+          {props.title}
+        </div>
         <p style={{ color: props.color }} className="pricingMenuParagraph">
           {props.paragraph}
         </p>
-        <div className="pricingMenuPrice">
-          <div className="price">{props.price}</div>
+        <div style={{ color: props.color }} className="pricingMenuPrice">
+          <div style={{ color: props.color }} className="price">
+            {props.price}
+          </div>
           <div className="permonth">per month</div>
         </div>
-        <button className="pricingMenuButton">PICK PLAN</button>
+        <button
+          style={{ background: props.color, color: props.background }}
+          className="pricingMenuButton"
+        >
+          PICK PLAN
+        </button>
       </div>
       <div className="pricingRightSide">
-        <div className="price">{props.price}</div>
-        <div className="permonth">per month</div>
+        <div style={{ color: props.color }} className="price">
+          {props.price}
+        </div>
+        <div style={{ color: props.color }} className="permonth">
+          per month
+        </div>
       </div>
     </div>
   );
