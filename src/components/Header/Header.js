@@ -1,11 +1,21 @@
 import icon from "./headerassets/Path 2.png";
 import logo from "./headerassets/PHOTOSNAP.png";
 import "./Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalWindow from "./ModalWindow";
 import close from "./headerassets/icon-close-e6500fac.svg";
 export default function Header() {
   const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    const body = document.getElementsByTagName("body");
+    if (clicked) {
+      body[0].style.overflow = "hidden";
+    } else {
+      body[0].style.overflow = "scroll";
+    }
+  }, [clicked]);
+
   return (
     <header>
       <div className="header">
