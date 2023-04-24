@@ -13,7 +13,6 @@
     flex-direction: column;
   }
   .mobileHeader {
-    width: 318px;
     border-bottom: solid black 1px;
     display: flex;
     justify-content: flex-start;
@@ -133,7 +132,7 @@
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 23.5px;
     padding-top: 25px;
-    padding-left: 124px;
+    padding-left: 100px;
   }
   .tableText {
     padding-left: 40px;
