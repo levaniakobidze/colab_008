@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 538px) {
   .desktop {
     display: none;
   }
@@ -8,8 +8,10 @@
   .mobile {
     display: flex;
     flex-direction: column;
-    margin-left: 28px;
-    margin-right: 28px;
+    /* margin-left: 28px;
+    margin-right: 28px; */
+    margin: 64px 0;
+    padding: 0 28px;
   }
   .mobileHeader {
     border-bottom: solid black 1px;
@@ -18,12 +20,17 @@
     padding-bottom: 23px;
   }
   .tableHeaders {
-    display: flex;
-    justify-content: flex-start;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: left;
+
+    letter-spacing: 2px;
+
+    color: #000000;
 
     /* identical to box height */
     margin-top: 23px;
@@ -39,9 +46,8 @@
     font-size: 10px;
 
     /* identical to box height */
-    padding-left: 30px;
-    padding-bottom: 8px;
-    padding-right: 40px;
+    /* padding-right: 70px; */
+    /* padding-bottom: 8px; */
     letter-spacing: 1.66667px;
 
     color: #000000;
@@ -50,17 +56,18 @@
     opacity: 0.5;
   }
   tr.row {
-    border-bottom: solid gray;
-    width: 100%;
+    border-bottom: solid #dfdfdf;
+    width: 90%;
   }
   .compare {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 24px;
+    margin-right: 20px;
+    padding: 24px 0;
   }
   .line {
-    border-bottom: solid gray 1px;
+    border-bottom: solid #dfdfdf 1px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .rows {
@@ -68,6 +75,8 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
+    display: flex;
+    justify-content: space-between;
 
     /* identical to box height */
 
@@ -76,15 +85,19 @@
     color: #000000;
   }
 }
-@media (min-width: 376px) {
+@media (min-width: 539px) {
   .mobile {
     display: none;
   }
   .compareTableContainer {
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    padding: 0 40px;
+    margin: 112px 0;
+  }
+  .table {
+    width: auto;
   }
 
   .compareTableHeader {
@@ -128,7 +141,11 @@
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 23.5px;
     padding-top: 25px;
-    padding-left: 100px;
+    padding-left: 50px;
+  }
+
+  .firstRow {
+    padding: 23px 30px;
   }
   .tableText {
     padding-left: 40px;
@@ -136,5 +153,11 @@
   }
   .firstRow {
     border-bottom: 1px solid black;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .table {
+    width: 731px;
   }
 }
