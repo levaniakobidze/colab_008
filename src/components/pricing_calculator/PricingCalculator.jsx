@@ -1,6 +1,7 @@
 import React from "react";
 import PricingMenuComponent from "./PricingMenuComponent";
 import { useState } from "react";
+import pricePurpleLine from "./image/pricePurpleLine.png";
 
 const PricingCalculator = () => {
   const [inputSwitch, setInputSwitch] = useState(false);
@@ -8,15 +9,19 @@ const PricingCalculator = () => {
   return (
     <div className="pricingCalculatorContainer">
       <div className="switchContainer">
-        <span className="switchMonth">Month</span>
+        <span className={inputSwitch ? "switchMonthOff" : "switchMonth"}>
+          Month
+        </span>
         <div
           onClick={() => setInputSwitch(!inputSwitch)}
           className={inputSwitch ? "inputSwitched" : "inputContainer"}
         >
-          <div className="switch"></div>
+          <div className={inputSwitch ? "switched" : "switch"}></div>
         </div>
 
-        <span className="switchYear">Year</span>
+        <span className={inputSwitch ? "switchYear" : "switchYearOff"}>
+          Year
+        </span>
       </div>
       <div className="pricingComponentsContainer">
         <PricingMenuComponent
@@ -28,9 +33,11 @@ const PricingCalculator = () => {
           price={inputSwitch ? "$190.00" : "$19.00"}
         />
         <PricingMenuComponent
+          pricePurpleLine={pricePurpleLine}
+          
           background={"black"}
           color={"white"}
-          height={window.innerWidth < 768 ? "470px" : "407px"}
+          height={window.innerWidth < 768 ? "407px" : "470px"}
           title={"Pro"}
           paragraph={
             "More advanced features available. Recommended for photography veterans and professionals."
