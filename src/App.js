@@ -1,15 +1,18 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+
 import Home from "./pages/Home/Home";
-import { Route, Routes } from "react-router-dom";
+import Stories from "./pages/Stories/Stories";
+// import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
+      <Stories />
+      {/* <Routes>
         <Route path="/" element={<Home />}></Route>
-      </Routes>
+      </Routes> */}
       <Footer />
     </div>
   );
