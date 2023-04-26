@@ -5,7 +5,7 @@ import PricingCalculator from "../../components/pricing_calculator/PricingCalcul
 import CompareTable from "../../components/CompareTable/CompareTable";
 import firstImage from '../../assets/home/desktop/create-and-share.jpg';
 import secondImage from '../../assets/home/desktop/beautiful-stories.jpg';
-
+import thirdImage from '../../assets/home/desktop/designed-for-everyone.jpg'
 const Home = () => {
   return (
     <div>
