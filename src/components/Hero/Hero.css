@@ -1,3 +1,15 @@
+.svg {
+  margin-left: 26px;
+}
+.purpleLineContainer {
+  position: relative;
+}
+.purpleLine {
+  width: 128px;
+  position: absolute;
+  top: 0px;
+  left: 29px;
+}
 .heroContainer {
   display: flex;
   flex-direction: column;
@@ -9,6 +21,8 @@
   margin-top: 72px;
   padding-left: 33px;
   margin-right: 24px;
+  margin-bottom: 70px;
+  height: 300px;
 }
 .heroParagraph {
   margin-top: 16px;
@@ -47,13 +61,30 @@
   width: 100%;
 }
 @media (min-width: 768px) {
+  .purpleLineContainer {
+    position: relative;
+  }
+  .purpleLine {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 304px;
+    left: -650px;
+    top: 50%;
+  }
   .heroContainer {
     flex-direction: row;
-    height: 600px;
+  }
+  .heroTextContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .heroText {
-    margin: 136px 54px 173px 54px;
-    width: 387px;
+    width: 100%;
+    width: 495px;
+    margin: 30px auto;
   }
   .heroHeader {
     font-family: "DM Sans";
@@ -70,12 +101,41 @@
   }
   .heroImgInner {
     width: 272px;
-    height: 600px;
+    height: 650px;
     object-fit: cover;
   }
 }
-
+@media (min-width: 1050px) {
+  .purpleLineContainer {
+    position: relative;
+  }
+  .heroContainer {
+  }
+  .purpleLine {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 304px;
+    left: -820px;
+    top: 50%;
+  }
+  .heroImgInner {
+    width: 400px;
+  }
+  .heroText {
+    margin-left: 80px;
+  }
+}
 @media (min-width: 1440px) {
+  .purpleLineContainer {
+    position: relative;
+  }
+  .purpleLine {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 304px;
+    left: -752px;
+    top: 300px;
+  }
   .heroText {
     width: 387px;
     margin: 173px 111px 173px 112px;

@@ -6,6 +6,7 @@ const PricingMenuComponent = (props) => {
       style={{ background: props.background, height: props.height }}
       className="pricingMenuContainer"
     >
+      <img className="pricePurpleLine" src={props.pricePurpleLine} alt="" />
       <div className="pricingMenuInfo">
         <div style={{ color: props.color }} className="pricingMenuHeader">
           {props.title}
@@ -20,8 +21,8 @@ const PricingMenuComponent = (props) => {
           <div className="permonth">per month</div>
         </div>
         <button
-          style={{ background: props.color, color: props.background }}
-          className="pricingMenuButton"
+          style={{ background: props.color, color: props.background, }}
+          className={`pricingMenuButton ${props.background === "black" ? "blackHover" : ''}`  }
         >
           PICK PLAN
         </button>
