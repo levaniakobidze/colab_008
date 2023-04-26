@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-
+import purpleLineForTablet from './images/purpleLineForTables.svg'
 import purpleLine from './images/purpleline.svg'
 const Hero = (props) => {
   return (
@@ -8,13 +8,13 @@ const Hero = (props) => {
       style={{ background: props.background, flexDirection: props.direction }}
       className="heroContainer"
     >
-      
-    
+     
        
        <img className="heroImgInner" src={props.img} alt="" />
        <div className="purpleLineContainer">
        <img style={{display:props.lineOff}} className="purpleLine" src={purpleLine} alt=""/>
        </div>
+      
        <div className="heroTextContainer">
       <div className="heroText">
         <h1 style={{ color: props.color }} className="heroHeader">
@@ -33,6 +33,9 @@ const Hero = (props) => {
         </div>
       </div>
       </div>
+      <div className="purpleLineForTabletContainer">
+          <img style={{display:props.lineOff}} className="purpleLineForTablet" src={purpleLineForTablet}/>
+     </div>
     </div>
   );
 };

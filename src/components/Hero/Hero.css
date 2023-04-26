@@ -1,6 +1,9 @@
 .svg {
   margin-left: 26px;
 }
+.purpleLineForTablet {
+  display: none;
+}
 .purpleLineContainer {
   position: relative;
 }
@@ -61,15 +64,16 @@
   width: 100%;
 }
 @media (min-width: 768px) {
-  .purpleLineContainer {
+  .purpleLine {
+    display: none;
+  }
+  .purpleLineForTabletContainer {
     position: relative;
   }
-  .purpleLine {
+  .purpleLineForTablet {
     position: absolute;
-    transform: rotate(90deg);
-    width: 304px;
-    left: -650px;
-    top: 50%;
+    top: 30%;
+    display: block;
   }
   .heroContainer {
     flex-direction: row;
@@ -106,17 +110,11 @@
   }
 }
 @media (min-width: 1050px) {
-  .purpleLineContainer {
-    position: relative;
-  }
-  .heroContainer {
-  }
   .purpleLine {
-    position: absolute;
-    transform: rotate(90deg);
-    width: 304px;
-    left: -820px;
-    top: 50%;
+    display: none;
+  }
+  .purpleLineForTablet {
+    display: block;
   }
   .heroImgInner {
     width: 400px;
@@ -129,12 +127,11 @@
   .purpleLineContainer {
     position: relative;
   }
+  .purpleLineForTablet {
+    display: block;
+  }
   .purpleLine {
-    position: absolute;
-    transform: rotate(90deg);
-    width: 304px;
-    left: -752px;
-    top: 300px;
+    display: none;
   }
   .heroText {
     width: 387px;
