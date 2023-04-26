@@ -100,6 +100,7 @@ header {
   position: absolute;
   margin-top: 252px;
   transition: opacity 1s;
+  z-index: 999;
 }
 .header-overlay.disappear {
   opacity: 0;
