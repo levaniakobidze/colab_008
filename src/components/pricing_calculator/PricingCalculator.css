@@ -180,13 +180,12 @@
   color: gray;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) {
   .pricePurpleLine {
-    position: absolute;
-    width: 470px;
     transform: rotate(90deg);
-    top: 230px;
-    left: -230px;
+    width: 470px;
+    top: 49%;
+    left: -34%;
   }
   .pricingComponentsContainer {
     flex-direction: column;
@@ -222,9 +221,11 @@
   }
 }
 @media (min-width: 1050px) {
-  .pricingCalculatorContainer {
-    padding: 0 30px;
-    margin: 0;
+  .pricePurpleLine {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    width: 300px;
   }
   .pricingCalculatorContainer {
     margin-bottom: 160px;
@@ -255,6 +256,12 @@
   }
 }
 @media (min-width: 1440px) {
+  .pricePurpleLine {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    width: 350px;
+  }
   .pricingComponentsContainer {
     flex-direction: row;
     align-items: center;
