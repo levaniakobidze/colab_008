@@ -1,9 +1,20 @@
+.pricePurpleLine {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.blackHover:hover {
+  background: #dfdfdf !important;
+}
 .pricingComponentsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .pricingMenuContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -24,20 +35,33 @@
   background: #dfdfdf;
   border-radius: 16px;
 }
+.inputContainer:hover {
+  cursor: pointer;
+}
 .inputSwitched {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 64px;
   height: 32px;
-  background: #dfdfdf;
+  background: black;
   border-radius: 16px;
+}
+.inputSwitched:hover {
+  cursor: pointer;
 }
 .switch {
   width: 24px;
   height: 24px;
   border-radius: 100%;
   background: black;
+}
+
+.switched {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: white;
 }
 
 .pricingMenuHeader {
@@ -116,6 +140,19 @@
 
   color: #000000;
 }
+.switchMonthOff {
+  margin-right: 36px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+
+  text-align: right;
+
+  color: gray;
+}
 .switchYear {
   margin-left: 36px;
   font-family: "DM Sans";
@@ -129,8 +166,27 @@
 
   color: #000000;
 }
+.switchYearOff {
+  margin-left: 36px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
 
-@media (min-width: 768px) and (max-width: 1439px) {
+  text-align: right;
+
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .pricePurpleLine {
+    transform: rotate(90deg);
+    width: 470px;
+    top: 49%;
+    left: -34%;
+  }
   .pricingComponentsContainer {
     flex-direction: column;
     align-items: center;
@@ -141,6 +197,7 @@
     display: none;
   }
   .pricingMenuContainer {
+    position: relative;
     flex-direction: row;
     width: 689px;
     margin-left: 40px;
@@ -163,7 +220,48 @@
     display: block;
   }
 }
+@media (min-width: 1050px) {
+  .pricePurpleLine {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    width: 300px;
+  }
+  .pricingCalculatorContainer {
+    margin-bottom: 160px;
+  }
+  .pricingComponentsContainer {
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .pricingMenuContainer {
+    margin: 0;
+  }
+
+  .pricingRightSide {
+    display: none;
+  }
+  .pricingComponentsContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pricingMenuContainer {
+    width: 300px;
+  }
+  .pricingMenuParagraph {
+    width: 200px;
+  }
+  .pricingMenuButton {
+    width: 200px;
+  }
+}
 @media (min-width: 1440px) {
+  .pricePurpleLine {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    width: 350px;
+  }
   .pricingComponentsContainer {
     flex-direction: row;
     align-items: center;

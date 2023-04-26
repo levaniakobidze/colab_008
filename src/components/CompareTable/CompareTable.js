@@ -16,45 +16,45 @@ const CompareTable = () => {
         <tr className="line">
           <td className="tableText">UNLIMITED STORY POSTING</td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td className="BUSINESS">
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
           <td className="tableText">UNLIMITED PHOTO UPLOAD</td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
           <td className="tableText">EMBEDDING CUSTOM CONTENT</td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
           <td className="tableText">CUSTOMIZE METADATA</td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
@@ -62,7 +62,7 @@ const CompareTable = () => {
           <td></td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@ const CompareTable = () => {
           <td></td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ const CompareTable = () => {
           <td></td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@ const CompareTable = () => {
           <td></td>
           <td></td>
           <td>
-            <img className="compare" src={icon} />
+            <img className="compare" src={icon} alt="" />
           </td>
         </tr>
       </table>
@@ -100,9 +100,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">UNLIMITED PHOTO UPLOAD</th>
         <tr className="rows">
@@ -112,9 +112,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">EMBEDDING CUSTOM CONTENT</th>
         <tr className="rows">
@@ -124,9 +124,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">CUSTOMIZE METADATA</th>
         <tr className="rows">
@@ -136,9 +136,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">ADVANCED METRICS</th>
         <tr className="rows">
@@ -148,9 +148,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">PHOTO DOWNLOADS</th>
         <tr className="rows">
@@ -160,9 +160,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">SEARCH ENGINE INDEXING</th>
         <tr className="rows">
@@ -172,9 +172,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">CUSTOM ANALYTICS</th>
         <tr className="rows">
@@ -184,9 +184,9 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} />{" "}
-          <img className="compare" src={icon} />
-          <img className="compare" src={icon} />
+          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare" src={icon} alt="" />
+          <img className="compare" src={icon} alt="" />
         </tr>
       </table>
     </div>

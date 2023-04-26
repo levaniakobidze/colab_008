@@ -4,6 +4,8 @@ import "./Header.css";
 import { useState, useEffect } from "react";
 import ModalWindow from "./ModalWindow";
 import close from "./headerassets/icon-close-e6500fac.svg";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   const [clicked, setClicked] = useState(false);
 
@@ -19,16 +21,24 @@ export default function Header() {
   return (
     <header>
       <div className="header">
-        <div className="header-icon-logo">
-          <img className="header-icon" src={icon} alt=""></img>
-          <div className="header-logo">
-            <img src={logo} alt="logo"></img>
+        <Link to="/">
+          <div className="header-icon-logo">
+            <img className="header-icon" src={icon} alt=""></img>
+            <div className="header-logo">
+              <img src={logo} alt="logo"></img>
+            </div>
           </div>
-        </div>
+        </Link>
         <nav className="tablet-header-navbar">
-          <button className="tablet-header-button">STORIES</button>
-          <button className="tablet-header-button">FEATURES</button>
-          <button className="tablet-header-button">PRICING</button>
+          <Link to="stories">
+            <button className="tablet-header-button">STORIES</button>
+          </Link>
+          <Link to="features">
+            <button className="tablet-header-button">FEATURES</button>
+          </Link>
+          <Link to="pricing">
+            <button className="tablet-header-button">PRICING</button>
+          </Link>
         </nav>
         <button className="tablet-invite-button">GET AN INVITE</button>
 

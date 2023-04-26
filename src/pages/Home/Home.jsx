@@ -1,14 +1,16 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
 import Features3 from "../../components/FeaturesTexts/Features3";
-import PricingCalculator from "../../components/pricing_calculator/PricingCalculator";
-import CompareTable from "../../components/CompareTable/CompareTable";
+import firstImage from "../../assets/home/desktop/create-and-share.jpg";
+import secondImage from "../../assets/home/desktop/beautiful-stories.jpg";
+import thirdImage from "../../assets/home/desktop/designed-for-everyone.jpg";
 const Home = () => {
   return (
     <div>
-      <CompareTable />
-<PricingCalculator />
       <Hero
+        direction={window.innerWidth < 768 ? "column" : "row-reverse"}
+        img={firstImage}
+        fill={"white"}
         background={"black"}
         color={"white"}
         header={"Create and share your photo stories."}
@@ -17,15 +19,22 @@ const Home = () => {
         }
       />
       <Hero
+        img={secondImage}
+        lineOff={"none"}
+        fill={"black"}
         background={"white"}
         color={"black"}
-        direction={window.innerWidth < 768 ? "column" : "row-reverse"}
+        direction={window.innerWidth < 768 ? "column" : "row"}
         header={"BEAUTIFUL STORIES EVERY TIME"}
         paragraph={
           "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
         }
       />
       <Hero
+        direction={window.innerWidth < 768 ? "column" : "row-reverse"}
+        img={thirdImage}
+        lineOff={"none"}
+        fill={"black"}
         background={"white"}
         color={"black"}
         header={"DESIGNED FOR EVERYONE"}
