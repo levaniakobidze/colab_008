@@ -15,6 +15,7 @@ const Home = () => {
         fill={"white"}
         background={"black"}
         color={"white"}
+        display={"block"}
         header={"Create and share your photo stories."}
         paragraph={
           "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
@@ -26,6 +27,7 @@ const Home = () => {
         fill={"black"}
         background={"white"}
         color={"black"}
+        display={"block"}
         direction={window.innerWidth < 768 ? "column" : "row"}
         header={"BEAUTIFUL STORIES EVERY TIME"}
         paragraph={
@@ -39,6 +41,7 @@ const Home = () => {
         fill={"black"}
         background={"white"}
         color={"black"}
+        display={"block"}
         header={"DESIGNED FOR EVERYONE"}
         paragraph={
           "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
