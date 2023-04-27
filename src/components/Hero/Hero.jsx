@@ -27,7 +27,7 @@ const Hero = (props) => {
             {props.paragraph}
           </p>
           <div className="heroArrowContainer">
-            <div className="" style={{ color: props.color }}>
+            <div className="svgContainer" style={{ color: props.color }}>
               GET AN INVITE{" "}
               <svg
                 className="svg"

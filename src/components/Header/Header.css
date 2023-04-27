@@ -1,5 +1,7 @@
 header {
   position: relative;
+  width: 100%;
+  padding: 0 20px;
 }
 .header {
   width: 100%;
@@ -20,6 +22,7 @@ header {
   position: absolute;
   width: 100%;
   top: -225px;
+  left: 0;
   height: 253px;
   padding: 32px;
   font-style: normal;
@@ -62,6 +65,7 @@ header {
   transition: opacity 0.3s ease-in;
   background-color: white;
   z-index: 999;
+  left: 0;
 }
 .modal-links {
   height: 120px;
@@ -96,6 +100,7 @@ header {
 }
 .header-overlay {
   width: 100%;
+  left: 0;
   height: 100vh;
   background: black;
   opacity: 0.75;
@@ -114,7 +119,7 @@ header {
 .tablet-invite-button {
   display: none;
 }
-@media screen and (min-width: 768px) {
+
   header {
     padding-right: 40px;
     padding-left: 16px;
@@ -175,5 +180,31 @@ header {
       color: black;
       border: none;
     }
+}
+/* @media screen and (min-width: 1050px) {
+  .modal-window {
+    display: none;
+  }
+  .header_overlay {
+    display: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  .tablet-invite-button:hover {
+    background-color: #dfdfdf;
+    color: black;
+    border: none;
+  }
+  .tablet-header-button:hover {
+    color: #dfdfdf;
+  }
+}
+*/
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 0 112px;
   }
 }

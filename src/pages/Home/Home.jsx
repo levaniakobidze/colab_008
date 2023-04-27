@@ -4,6 +4,8 @@ import Features3 from "../../components/FeaturesTexts/Features3";
 import firstImage from "../../assets/home/desktop/create-and-share.jpg";
 import secondImage from "../../assets/home/desktop/beautiful-stories.jpg";
 import thirdImage from "../../assets/home/desktop/designed-for-everyone.jpg";
+import { ImgComData } from "../../ImgCompData";
+import ImageComponent from '../../components/ImageComponent/ImageComponent'
 const Home = () => {
   return (
     <div>
@@ -45,6 +47,18 @@ const Home = () => {
           "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
         }
       />
+      <div className="stories-flex">
+        <div className="stories-grid">
+          {ImgComData.slice(0, 4).map((item) => (
+            <ImageComponent
+              img={item.img}
+              title={item.title}
+              creator={item.creator}
+              date={item.date}
+            />
+          ))}
+        </div>
+      </div>
       <Features3 />
     </div>
   );

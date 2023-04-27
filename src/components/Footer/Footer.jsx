@@ -1,4 +1,3 @@
-import "./Footer.css";
 import triangle from "./triangle.png";
 import twitter from "./twitter.png";
 import pinterest from "./pinterest.png";
@@ -7,21 +6,21 @@ import inst from "./instagram.png";
 import youtube from "./youtube.png";
 import line from "./line.png";
 import arrow from "./arrow.png";
-
+import "./Footer.css";
 export default function Footer() {
   return (
     <>
       <div className="footer">
         <div className="footer-div">
-          <img src={triangle}></img>
+          <img src={triangle} alt="icon"></img>
           <h2>PHOTOSNAP</h2>
         </div>
         <div className="icon-div">
-          <img src={facebook}></img>
-          <img src={youtube}></img>
-          <img src={twitter}></img>
-          <img src={pinterest}></img>
-          <img src={inst}></img>
+          <img src={facebook} alt="icon"></img>
+          <img src={youtube} alt="icon"></img>
+          <img src={twitter} alt="icon"></img>
+          <img src={pinterest} alt="icon"></img>
+          <img src={inst} alt="icon"></img>
         </div>
         <ul>
           <li>HOME</li>
@@ -31,8 +30,8 @@ export default function Footer() {
         </ul>
         <div className="get-invite">
           <h3>GET AN INVITE</h3>
-          <img src={line}></img>
-          <img className="arrow" src={arrow}></img>
+          <img src={line} alt="icon"></img>
+          <img className="arrow" src={arrow} alt="icon"></img>
         </div>
         <p className="footer-p">Copyright 2019. All Rights Reserved</p>
       </div>
@@ -40,7 +39,7 @@ export default function Footer() {
       <div className="tablet-footer">
         <div className="wrapper">
           <div className="tablet-h2">
-            <img src={triangle}></img>
+            <img src={triangle} alt="icon"></img>
             <h2>PHOTOSNAP</h2>
             <ul className="desktop-ul">
               <li>HOME</li>
@@ -52,8 +51,8 @@ export default function Footer() {
 
           <div className="get-invite-tablet">
             <h3>GET AN INVITE</h3>
-            <img src={line}></img>
-            <img className="arrow" src={arrow}></img>
+            <img src={line} alt="icon"></img>
+            <img className="arrow" src={arrow} alt="icon"></img>
           </div>
         </div>
         <ul className="tablet-ul">
@@ -64,11 +63,11 @@ export default function Footer() {
         </ul>
         <div className="wrapper2">
           <div className="icon-div-tablet">
-            <img src={facebook}></img>
-            <img src={youtube}></img>
-            <img src={twitter}></img>
-            <img src={pinterest}></img>
-            <img src={inst}></img>
+            <img src={facebook} alt="icon"></img>
+            <img src={youtube} alt="icon"></img>
+            <img src={twitter} alt="icon"></img>
+            <img src={pinterest} alt="icon"></img>
+            <img src={inst} alt="icon"></img>
           </div>
 
           <p className="footer-p">Copyright 2019. All Rights Reserved</p>
