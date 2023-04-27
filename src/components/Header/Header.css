@@ -119,6 +119,12 @@ header {
     padding-right: 40px;
     padding-left: 16px;
   }
+  button {
+    cursor: pointer;
+  }
+  .tablet-header-button:hover {
+    color: #dfdfdf;
+  }
   .header-menu-button {
     display: none;
   }
@@ -163,16 +169,11 @@ header {
     header {
       padding: 0 165px;
     }
-    button {
-      cursor: pointer;
-    }
+
     .tablet-invite-button:hover {
       background-color: #dfdfdf;
       color: black;
       border: none;
-    }
-    .tablet-header-button:hover {
-      color: #dfdfdf;
     }
   }
 }
