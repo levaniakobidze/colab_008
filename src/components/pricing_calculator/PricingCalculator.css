@@ -1,6 +1,5 @@
 .pricePurpleLine {
   position: absolute;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -12,6 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .pricingMenuContainer {
   position: relative;
@@ -79,7 +79,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  width: 275px;
+  max-width: 275px;
   display: flex;
   margin-bottom: 40px;
   color: #000000;
@@ -126,6 +126,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 64px;
 }
 .switchMonth {
   margin-right: 36px;
