@@ -5,9 +5,6 @@ import Stories from "./pages/Stories/Stories";
 import { Route, Routes } from "react-router-dom";
 import Pricing from "./pages/Pricing/Pricing";
 import Features from "./pages/Features/Features";
-import Stories from "./pages/Stories/Stories";
-import { Route, Routes } from "react-router-dom";
-
 
 function App() {
   return (
