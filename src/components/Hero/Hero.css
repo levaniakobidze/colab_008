@@ -1,6 +1,9 @@
 .svg {
   margin-left: 26px;
 }
+.svgContainer:hover {
+  cursor: pointer;
+}
 .purpleLineForTablet {
   display: none;
 }
