@@ -23,6 +23,8 @@
   padding-top: 42px;
   background: #f5f5f5;
   margin: 40px 28px 24px 29px;
+  width: 318px;
+  height: 407px;
 }
 .switchContainer {
   display: flex;
@@ -73,6 +75,8 @@
   line-height: 25px;
   margin-bottom: 18px;
   color: #000000;
+  display: flex;
+  justify-content: center;
 }
 .pricingMenuParagraph {
   font-family: "DM Sans";
@@ -82,9 +86,10 @@
   line-height: 25px;
   max-width: 275px;
   display: flex;
+
   margin-bottom: 40px;
   color: #000000;
-
+  text-align: center;
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -185,15 +190,23 @@
 @media (min-width: 768px) {
   .pricePurpleLine {
     transform: rotate(90deg);
-    width: 470px;
+    width: 270px;
     top: 49%;
-    left: -34%;
+    left: -19.5%;
   }
   .pricingComponentsContainer {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+
     /* width: 100%; */
+  }
+  .pricingMenuHeader {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .pricingMenuParagraph {
+    margin-bottom: 0;
+    text-align: left;
   }
   .pricingMenuPrice {
     display: none;
@@ -202,7 +215,7 @@
     position: relative;
     flex-direction: row;
     width: 689px;
-    height: 270px;
+    height: 270px !important;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -212,7 +225,7 @@
     margin-left: 40px;
   }
   .pricingMenuButton {
-    margin-top: 32px;
+    margin-bottom: 40px;
     width: 270px;
     height: 40px;
   }
@@ -224,17 +237,35 @@
   }
 }
 @media (min-width: 1050px) {
+  .pricingMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .pricingMenuInfo {
+    margin: 0;
+  }
+  .pricingMenuHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .pricingMenuParagraph {
+    text-align: center;
+    margin: 0 auto;
+    width: 270px !important;
+  }
   .pricingMenuPrice {
     display: block;
   }
   .permonth {
-    padding-left: 70px;
+    text-align: center;
   }
   .pricePurpleLine {
     transform: rotate(180deg);
     top: 0;
     left: 0;
-    width: 300px;
+    width: 100%;
   }
   .pricingCalculatorContainer {
     margin-bottom: 160px;
@@ -245,6 +276,10 @@
   }
   .pricingMenuContainer {
     margin: 0;
+    height: 407px !important;
+  }
+  .pricingMenuContainer:nth-child(2) {
+    height: 470px !important;
   }
 
   .pricingRightSide {
@@ -255,13 +290,14 @@
     align-items: center;
   }
   .pricingMenuContainer {
-    width: 300px;
+    width: 350px;
   }
   .pricingMenuParagraph {
     width: 200px;
+    margin-bottom: 40px;
   }
   .pricingMenuButton {
-    width: 230px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 1440px) {
@@ -269,7 +305,6 @@
     display: block;
   }
   .permonth {
-    padding-left: 90px;
   }
   .pricePurpleLine {
     transform: rotate(180deg);
@@ -284,9 +319,7 @@
   .pricingMenuContainer {
     width: 350px;
     justify-content: center;
-    padding-right: 35px;
   }
   .pricingMenuButton {
-    width: 270px;
   }
 }
