@@ -119,17 +119,7 @@ header {
 .tablet-invite-button {
   display: none;
 }
-
-  header {
-    padding-right: 40px;
-    padding-left: 16px;
-  }
-  button {
-    cursor: pointer;
-  }
-  .tablet-header-button:hover {
-    color: #dfdfdf;
-  }
+@media screen and (min-width: 768px) {
   .header-menu-button {
     display: none;
   }
@@ -164,24 +154,8 @@ header {
   .header-overlay {
     display: none;
   }
-  @media screen and (min-width: 1050px) {
-    .modal-window {
-      display: none;
-    }
-    .header_overlay {
-      display: none;
-    }
-    header {
-      padding: 0 165px;
-    }
-
-    .tablet-invite-button:hover {
-      background-color: #dfdfdf;
-      color: black;
-      border: none;
-    }
 }
-/* @media screen and (min-width: 1050px) {
+@media screen and (min-width: 1050px) {
   .modal-window {
     display: none;
   }
@@ -201,7 +175,6 @@ header {
     color: #dfdfdf;
   }
 }
-*/
 
 @media screen and (min-width: 1440px) {
   .header {

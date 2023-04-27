@@ -67,6 +67,10 @@
   width: 100%;
 }
 @media (min-width: 768px) {
+  .heroText {
+    margin: 0;
+    padding: 0 54px;
+  }
   .purpleLine {
     display: none;
   }
@@ -75,7 +79,7 @@
   }
   .purpleLineForTablet {
     position: absolute;
-    top: 30%;
+    top: 27%;
     display: block;
   }
   .heroContainer {
@@ -88,11 +92,11 @@
     align-items: center;
     justify-content: center;
   }
-  .heroText {
+  /* .heroText {
     width: 100%;
     width: 495px;
     margin: 30px auto;
-  }
+  } */
   .heroHeader {
     font-family: "DM Sans";
     font-style: normal;
@@ -113,6 +117,10 @@
   }
 }
 @media (min-width: 1050px) {
+  .heroText {
+    padding: 0;
+    width: 750px;
+  }
   .purpleLine {
     display: none;
   }

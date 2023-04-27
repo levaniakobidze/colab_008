@@ -10,11 +10,11 @@ export default function Header() {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
-    const body = document.getElementsByTagName("body");
+    const html = document.getElementsByTagName("html");
     if (clicked) {
-      body[0].style.overflow = "hidden";
+      html[0].style.overflow = "hidden";
     } else {
-      body[0].style.overflow = "scroll";
+      html[0].style.overflow = "scroll";
     }
   }, [clicked]);
 
@@ -45,8 +45,7 @@ export default function Header() {
         {!clicked ? (
           <button
             className="header-menu-button"
-            onClick={() => setClicked(!clicked)}
-          ></button>
+            onClick={() => setClicked(!clicked)}></button>
         ) : (
           ""
         )}
@@ -61,8 +60,9 @@ export default function Header() {
       <ModalWindow clicked={clicked} />
       <div
         onClick={() => setClicked(false)}
-        className={`${clicked ? "header-overlay" : "header-overlay disappear"}`}
-      ></div>
+        className={`${
+          clicked ? "header-overlay" : "header-overlay disappear"
+        }`}></div>
     </header>
   );
 }
