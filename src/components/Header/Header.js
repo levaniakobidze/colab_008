@@ -57,7 +57,7 @@ export default function Header() {
           ""
         )}
       </div>
-      <ModalWindow clicked={clicked} />
+      <ModalWindow clicked={clicked} setClicked={setClicked} />
       <div
         onClick={() => setClicked(false)}
         className={`${
