@@ -7,13 +7,13 @@ export default function ModalWindow(props) {
     >
       <div className="modal-links">
         <Link to="stories">
-          <button>STORIES</button>
+          <button onClick={() => props.setClicked(false)}>STORIES</button>
         </Link>
         <Link to="features">
-          <button>FEATURES</button>
+          <button onClick={() => props.setClicked(false)}>FEATURES</button>
         </Link>
         <Link to="pricing">
-          <button>PRICING</button>
+          <button onClick={() => props.setClicked(false)}>PRICING</button>
         </Link>
       </div>
       <div className="modal-invite">
