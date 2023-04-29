@@ -4,10 +4,7 @@ import purpleLineForTablet from "./images/purpleLineForTables.svg";
 import purpleLine from "./images/purpleline.svg";
 const Hero = (props) => {
   return (
-    <div
-      style={{ background: props.background, flexDirection: props.direction }}
-      className="heroContainer"
-    >
+    <div style={{ background: props.background }} className="heroContainer">
       <img className="heroImgInner" src={props.img} alt="" />
       <div className="purpleLineContainer">
         <img
@@ -35,8 +32,7 @@ const Hero = (props) => {
                 height="14"
                 viewBox="0 0 42 14"
                 fill={props.fill}
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7H41.864" stroke={props.fill} />
                 <path d="M35.4282 1L41.4282 7L35.4282 13" stroke="white" />
               </svg>

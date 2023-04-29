@@ -5,12 +5,11 @@ import firstImage from "../../assets/home/desktop/create-and-share.jpg";
 import secondImage from "../../assets/home/desktop/beautiful-stories.jpg";
 import thirdImage from "../../assets/home/desktop/designed-for-everyone.jpg";
 import { ImgComData } from "../../ImgCompData";
-import ImageComponent from '../../components/ImageComponent/ImageComponent'
+import ImageComponent from "../../components/ImageComponent/ImageComponent";
 const Home = () => {
   return (
     <div>
       <Hero
-        direction={window.innerWidth < 768 ? "column" : "row-reverse"}
         img={firstImage}
         fill={"white"}
         background={"black"}
@@ -28,14 +27,12 @@ const Home = () => {
         background={"white"}
         color={"black"}
         display={"block"}
-        direction={window.innerWidth < 768 ? "column" : "row"}
         header={"BEAUTIFUL STORIES EVERY TIME"}
         paragraph={
           "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
         }
       />
       <Hero
-        direction={window.innerWidth < 768 ? "column" : "row-reverse"}
         img={thirdImage}
         lineOff={"none"}
         fill={"black"}
