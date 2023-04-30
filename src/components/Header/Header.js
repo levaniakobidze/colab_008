@@ -22,7 +22,7 @@ export default function Header() {
     <header>
       <div className="header">
         <Link to="/">
-          <div className="header-icon-logo">
+          <div onClick={() => setClicked(false)} className="header-icon-logo">
             <img className="header-icon" src={icon} alt=""></img>
             <div className="header-logo">
               <img src={logo} alt="logo"></img>
@@ -45,7 +45,8 @@ export default function Header() {
         {!clicked ? (
           <button
             className="header-menu-button"
-            onClick={() => setClicked(!clicked)}></button>
+            onClick={() => setClicked(!clicked)}
+          ></button>
         ) : (
           ""
         )}
@@ -60,9 +61,8 @@ export default function Header() {
       <ModalWindow clicked={clicked} setClicked={setClicked} />
       <div
         onClick={() => setClicked(false)}
-        className={`${
-          clicked ? "header-overlay" : "header-overlay disappear"
-        }`}></div>
+        className={`${clicked ? "header-overlay" : "header-overlay disappear"}`}
+      ></div>
     </header>
   );
 }

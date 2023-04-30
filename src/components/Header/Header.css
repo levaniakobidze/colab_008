@@ -112,6 +112,7 @@ header {
 .header-overlay.disappear {
   opacity: 0;
   transition: 1s ease-in;
+  height: 200px;
 }
 .tablet-header-navbar {
   display: none;
