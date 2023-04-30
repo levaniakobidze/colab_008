@@ -124,7 +124,7 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare off" src={icon} alt="" />{" "}
           <img className="compare" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
@@ -136,7 +136,7 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
+          <img className="compare off" src={icon} alt="" />{" "}
           <img className="compare" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
@@ -148,8 +148,8 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
-          <img className="compare" src={icon} alt="" />
+          <img className="compare off" src={icon} alt="" />{" "}
+          <img className="compar off" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">PHOTO DOWNLOADS</th>
@@ -160,8 +160,8 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
-          <img className="compare" src={icon} alt="" />
+          <img className="compare off" src={icon} alt="" />{" "}
+          <img className="compare off" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">SEARCH ENGINE INDEXING</th>
@@ -172,8 +172,8 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
-          <img className="compare" src={icon} alt="" />
+          <img className="compare off" src={icon} alt="" />{" "}
+          <img className="compare off" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
         <th className="tableHeaders">CUSTOM ANALYTICS</th>
@@ -184,8 +184,8 @@ const CompareTable = () => {
         </tr>
         <tr className="line">
           {" "}
-          <img className="compare" src={icon} alt="" />{" "}
-          <img className="compare" src={icon} alt="" />
+          <img className="compare off" src={icon} alt="" />{" "}
+          <img className="compare off" src={icon} alt="" />
           <img className="compare" src={icon} alt="" />
         </tr>
       </table>
