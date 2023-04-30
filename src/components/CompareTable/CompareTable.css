@@ -13,6 +13,9 @@
     margin: 64px 0;
     padding: 0 28px;
   }
+  .off {
+    filter: opacity(0);
+  }
   .mobileHeader {
     border-bottom: solid black 1px;
     display: flex;
