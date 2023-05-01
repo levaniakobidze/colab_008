@@ -112,6 +112,10 @@
 .img-moon-div2 {
   display: none;
 }
+.moon-read-story:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .img-moon-div {
     display: none;
