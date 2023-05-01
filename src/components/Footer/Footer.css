@@ -74,6 +74,21 @@ ul li {
 .tablet-footer {
   display: none;
 }
+.link-line{
+  text-decoration: none;
+  color: white;
+}
+.link-line:hover{
+  opacity: 0.3;
+}
+.icon-div img{
+  cursor: pointer;
+}
+.get-invite h3:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 @media screen and (min-width: 768px) {
   .footer {
@@ -162,6 +177,13 @@ ul li {
   .icon-div-tablet img {
     margin-right: 12px;
   }
+}
+.icon-div-tablet img{
+  cursor: pointer;
+}
+.get-invite-tablet h3:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1440px) {
