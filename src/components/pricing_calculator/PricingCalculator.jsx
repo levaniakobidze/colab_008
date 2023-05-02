@@ -31,6 +31,7 @@ const PricingCalculator = () => {
             "Includes basic usage of our platform. Recommended for new and aspiring photographers."
           }
           price={inputSwitch ? "$190.00" : "$19.00"}
+          inputSwitch={inputSwitch}
         />
         <PricingMenuComponent
           pricePurpleLine={pricePurpleLine}
@@ -42,7 +43,8 @@ const PricingCalculator = () => {
           paragraph={
             "More advanced features available. Recommended for photography veterans and professionals."
           }
-          price={inputSwitch ? "$390.00$" : "$39.00"}
+          price={inputSwitch ? "$390.00" : "$39.00"}
+          inputSwitch={inputSwitch}
         />
         <PricingMenuComponent
           height={"407px"}
@@ -51,6 +53,7 @@ const PricingCalculator = () => {
             "Additional features available such as more detailed metrics. Recommended for business owners."
           }
           price={inputSwitch ? "$990.00" : "$99.00"}
+          inputSwitch={inputSwitch}
         />
       </div>
     </div>

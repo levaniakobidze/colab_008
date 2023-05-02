@@ -18,7 +18,7 @@ const PricingMenuComponent = (props) => {
           <div style={{ color: props.color }} className="price">
             {props.price}
           </div>
-          <div className="permonth">per month</div>
+          <div className="permonth">{props.inputSwitch ? 'per year' : 'per month'}</div>
         </div>
         <button
           style={{ background: props.color, color: props.background, }}
