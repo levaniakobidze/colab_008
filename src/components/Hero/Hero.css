@@ -3,6 +3,7 @@
 }
 .svgContainer:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 .purpleLineForTablet {
   display: none;
@@ -20,6 +21,7 @@
   display: flex;
   flex-direction: column;
   background: black;
+
 }
 .heroContainer:nth-child(1) {
   flex-direction: column;
@@ -73,7 +75,8 @@
 }
 @media (min-width: 768px) {
   .heroImgInner {
-    width: 50% !important;
+    width: 273px;
+    object-fit: contain;
   }
   .heroContainer:nth-child(1) {
     flex-direction: row-reverse;
@@ -98,6 +101,7 @@
   }
   .heroContainer {
     flex-direction: row;
+    justify-content: space-between;
   }
   .heroTextContainer {
     width: 100%;
@@ -130,6 +134,11 @@
   }
 }
 @media (min-width: 1050px) {
+  .heroImgInner {
+    width: 400px;
+    height: 650px;
+    object-fit: cover;
+  }
   .heroText {
     padding: 66px 112px;
     width: 100%;
@@ -152,7 +161,7 @@
     display: none;
   }
   .heroText {
-    width: 387px;
+    width: 100%;
     margin: 173px 111px 173px 112px;
   }
   .heroHeader {
@@ -174,5 +183,14 @@
   }
   .heroImgInner {
     width: 830px;
+    height: 650px;
+  }
+  .heroTextContainer {
+    width: 610px;
+    height: 650px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
   }
 }
