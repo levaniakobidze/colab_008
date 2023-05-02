@@ -2,6 +2,7 @@ import "./StoriesHeader.css";
 import storyMainImg from "../../assets/stories/mobile/moon-of-appalacia.jpg";
 import storyMainImg1 from "../../assets/stories/tablet/moon-of-appalacia.jpg";
 import storyMainImg2 from "../../assets/stories/desktop/moon-of-appalacia.jpg";
+import yellowbox from "./Rectangle1.png";
 import arrow from "./Path 3.png";
 import line from "./Path 4.png";
 
@@ -31,7 +32,9 @@ export default function StoriesHeader() {
           terrain is extremely rugged.
         </p>
         <div className="moon-read-story-wrapper">
-          <div className="moon-read-story">READ THE STORY</div>
+          <div className="moon-read-story">
+            READ THE STORY <img className="yellowbox" src={yellowbox}></img>
+          </div>
           <div className="moon-main-arrow">
             <img src={arrow}></img>
 

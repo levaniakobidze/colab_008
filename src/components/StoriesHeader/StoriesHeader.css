@@ -116,6 +116,9 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.yellowbox{
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .img-moon-div {
     display: none;
@@ -171,5 +174,19 @@
     /* width: 1440px; */
     height: 650px;
     padding: 122px 112px;
+  }
+  .moon-read-story{
+    position: relative;
+  }
+  .yellowbox{
+    position: absolute;
+    display: block;
+    bottom: -220px;
+    left: -112px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .moon-read-story:hover .yellowbox{
+    opacity: 1;
   }
 }
