@@ -1,5 +1,5 @@
 import "./Stories.css";
-import { ImgComData } from "../../ImgCompData.js";
+import { ImgComData } from "../../ImgCompData.jsx";
 import ImageComponent from "../../components/ImageComponent/ImageComponent";
 import StoriesHeader from "../../components/StoriesHeader/StoriesHeader";
 
@@ -23,4 +23,3 @@ export default function Stories() {
     </>
   );
 }
-

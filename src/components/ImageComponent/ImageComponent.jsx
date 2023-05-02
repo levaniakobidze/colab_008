@@ -5,8 +5,8 @@ import rect from "./Rectangle.png";
 export default function ImageComponent({ img, date, title, creator }) {
   return (
     <div className="img-comp-div">
-      <img className="img-comp-main-img" src={img} alt="photo" />
-      <img className="imagecomponent-rect" src={rect}></img>
+      <img className="img-comp-main-img" src={img} alt="" />
+      <img className="imagecomponent-rect" src={rect} alt=""></img>
       <div className="img-comp-absolute">
         <p>{date}</p>
         <h3>{title}</h3>
@@ -15,8 +15,8 @@ export default function ImageComponent({ img, date, title, creator }) {
         <div className="img-comp-readstory">
           <h3>READ STORY</h3>
           <div className="img-component-icon-wrapper">
-            <img src={line}></img>
-            <img className="img2" src={arrow}></img>
+            <img src={line} alt=""></img>
+            <img className="img2" src={arrow} alt=""></img>
           </div>
         </div>
       </div>
